@@ -69,9 +69,9 @@ struct Command
 #define STRLEN 64
 char buf[buf_size];
 char g_cmdid[STRLEN];
-char* prjid = "339"; //project_id
-char* auth_info = "{\"SYS\":\"F8E2ABB4278D47188CF6C1B3741D0DA1\"}"; //authoriz info
-char* devid = "9277";  //device_id
+char* prjid = "86718"; //product id
+char* auth_info = "zhangtao"; //authoriz info
+char* devid = "6069449";  //device id
 #define MAX_TOPICS_NUMB 100
 char* topics[MAX_TOPICS_NUMB+1];
 int g_pkt_id = 1;
@@ -1002,8 +1002,8 @@ int main(int argc, char **argv)
     struct epoll_event events[evt_max_cnt];
     int exit;
 
-    smpctx->host = "172.19.3.1";
-    smpctx->port = 10021;
+    smpctx->host = "183.230.40.39";
+    smpctx->port = 6002;
 
     char opt;
 
